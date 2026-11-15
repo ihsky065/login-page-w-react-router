@@ -27,11 +27,13 @@ export default function Login() {
                     <Form.Label>Password</Form.Label>
                     <Form.Control
                     type="password"
-                    placeholder="Enter email"
+                    placeholder="Password"
                     value={passInput}
                     onChange={(e) => setPassword(e.target.value)}>
                     </Form.Control>
                 </Form.Group>
+
+                <Button variant="primary">Login</Button>
             </Form>
         </Container>
         </>
