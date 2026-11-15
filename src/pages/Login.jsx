@@ -10,7 +10,9 @@ export default function Login() {
         <Container>
             <h1 className="my-3">Login into your account</h1>
             <Form>
-
+                <Form.Group className="mb-3" controlId="formEmail">
+                    <Form.Label>Email address</Form.Label>
+                </Form.Group>
             </Form>
         </Container>
         </>
