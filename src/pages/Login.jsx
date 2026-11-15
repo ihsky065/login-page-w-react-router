@@ -24,7 +24,13 @@ export default function Login() {
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formPass">
-                    
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control
+                    type="password"
+                    placeholder="Enter email"
+                    value={passInput}
+                    onChange={(e) => setPassword(e.target.value)}>
+                    </Form.Control>
                 </Form.Group>
             </Form>
         </Container>
