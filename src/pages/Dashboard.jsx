@@ -9,8 +9,8 @@ export default function Dashboard () {
                 <Col md={4}>
                 <Card className="mx-5">
                     <Card.Body>
-                    <h4>Sigma School Analytics</h4>
-                    <p>People who graduate who get job: 80%</p>
+                        <Card.Title>Sigma School Analytics</Card.Title>
+                        <Card.Text>People who graduate who get job: 80%</Card.Text>
                     </Card.Body>
                 </Card>
                 </Col>
