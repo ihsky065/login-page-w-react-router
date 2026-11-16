@@ -8,6 +8,7 @@ export default function Login() {
     const [passInput, setPassword] = useState('');
 
     const navigate = useNavigate();
+    const authContext = useContext(AuthContext);
 
     return(
         <>
