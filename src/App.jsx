@@ -7,6 +7,7 @@ import { AuthContext } from './AuthContext';
 import { useState } from 'react';
 
 export default function App () {
+    const [token, setToken] = useState(null);
     return(
         <BrowserRouter>
             <Routes>
