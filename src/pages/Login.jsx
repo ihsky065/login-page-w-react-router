@@ -10,6 +10,10 @@ export default function Login() {
     const navigate = useNavigate();
     const authContext = useContext(AuthContext);
 
+    function login () {
+        
+    }
+
     return(
         <>
         <Container>
