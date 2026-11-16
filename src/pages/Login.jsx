@@ -49,7 +49,7 @@ export default function Login() {
                     </Form.Control>
                 </Form.Group>
 
-                <Button variant="primary">Login</Button>
+                <Button variant="primary" onClick={login}>Login</Button>
             </Form>
         </Container>
         </>
