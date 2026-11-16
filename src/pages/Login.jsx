@@ -13,6 +13,12 @@ export default function Login() {
     function login () {
         const isCorrectUsername = emailInput === 'izzatulhusna@sigmaschool.co';
         const isCorrectPassword = passInput === 'password';
+
+        if (isCorrectUsername && isCorrectPassword) {
+            authContext.setToken('1234');
+            navigate('/dashboard')
+        }
+
     }
 
     return(
