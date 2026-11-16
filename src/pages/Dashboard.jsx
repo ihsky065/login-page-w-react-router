@@ -7,9 +7,11 @@ export default function Dashboard () {
             <h1 className="my-3">Dashboard</h1>
             <Row>
                 <Col md={4}>
-                <Card body className="mx-5">
+                <Card className="mx-5">
+                    <Card.Body>
                     <h4>Sigma School Analytics</h4>
                     <p>People who graduate who get job: 80%</p>
+                    </Card.Body>
                 </Card>
                 </Col>
             </Row>
