@@ -9,12 +9,14 @@ import { useState } from 'react';
 export default function App () {
     const [token, setToken] = useState(null);
     return(
-        <BrowserRouter>
-            <Routes>
-                <Route element={<Home/>} path='/' />
-                <Route element={<Login/>} path='/Login' />
-                <Route element={<Dashboard/>} path='/Dashboard' />
-            </Routes>
-        </BrowserRouter>
+        <AuthContext.Provider value={{token, setToken}}>
+            <BrowserRouter>
+                <Routes>
+                    <Route element={<Home/>} path='/' />
+                    <Route element={<Login/>} path='/Login' />
+                    <Route element={<Dashboard/>} path='/Dashboard' />
+                </Routes>
+            </BrowserRouter>
+        </AuthContext.Provider>
     )
 }
