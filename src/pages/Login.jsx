@@ -11,7 +11,8 @@ export default function Login() {
     const authContext = useContext(AuthContext);
 
     function login () {
-        
+        const isCorrectUsername = emailInput === 'izzatulhusna@sigmaschool.co';
+        const isCorrectPassword = passInput === 'password';
     }
 
     return(
