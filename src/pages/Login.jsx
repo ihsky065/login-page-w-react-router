@@ -7,7 +7,7 @@ export default function Login() {
     const [emailInput, setEmail] = useState('');
     const [passInput, setPassword] = useState('');
 
-
+    const navigate = useNavigate();
 
     return(
         <>
