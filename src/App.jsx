@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import { AuthContext } from './AuthContext';
 import { useState } from 'react';
 import RequireAuth from './components/RequireAuth';
+import { useLocalStorage } from 'usehooks-ts';
 
 export default function App () {
     const [token, setToken] = useState(null);
