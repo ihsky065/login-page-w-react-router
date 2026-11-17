@@ -9,7 +9,7 @@ import RequireAuth from './components/RequireAuth';
 import { useLocalStorage } from 'usehooks-ts';
 
 export default function App () {
-    const [token, setToken] = useState(null);
+    const [token, setToken] = useLocalStorage('token', null);
     return(
         <AuthContext.Provider value={{token, setToken}}>
             <BrowserRouter>
